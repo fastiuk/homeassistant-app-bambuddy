@@ -59,7 +59,7 @@ jobs:
       # The current main, not the commit this run was started on: a run that
       # waited behind another one must see the version that one committed.
       - name: Checkout
-        uses: actions/checkout@v7
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
         with:
           ref: ${{ github.ref }}
 
@@ -162,7 +162,7 @@ jobs:
     uses: ./.github/workflows/_build.yml
     with:
       context: bambuddy
-      image: ghcr.io/spegeli/homeassistant-app-bambuddy
+      image: ghcr.io/fastiuk/homeassistant-app-bambuddy
       version: ${{ needs.check-stable.outputs.version }}
 
   commit-stable:
@@ -181,7 +181,7 @@ jobs:
       # Without the secret, checkout falls back to the token, which the
       # ruleset rejects.
       - name: Checkout
-        uses: actions/checkout@v7
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
         with:
           ref: ${{ github.ref }}
           fetch-depth: 0
@@ -401,7 +401,7 @@ jobs:
       # The current main, not the commit this run was started on: a run that
       # waited behind another one must see the version that one committed.
       - name: Checkout
-        uses: actions/checkout@v7
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
         with:
           ref: ${{ github.ref }}
 
@@ -551,7 +551,7 @@ jobs:
     uses: ./.github/workflows/_build.yml
     with:
       context: bambuddy-daily
-      image: ghcr.io/spegeli/homeassistant-app-bambuddy-daily
+      image: ghcr.io/fastiuk/homeassistant-app-bambuddy-daily
       version: ${{ needs.check-daily.outputs.version }}
       digest: ${{ needs.check-daily.outputs.digest }}
 
@@ -571,7 +571,7 @@ jobs:
       # Without the secret, checkout falls back to the token, which the
       # ruleset rejects.
       - name: Checkout
-        uses: actions/checkout@v7
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
         with:
           ref: ${{ github.ref }}
           fetch-depth: 0

@@ -5,13 +5,18 @@
 <h1 align="center">BamBuddy – Home Assistant App</h1>
 
 <p align="center">
-  <a href="https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https://github.com/Spegeli/homeassistant-app-bambuddy"><img src="https://my.home-assistant.io/badges/supervisor_add_addon_repository.svg" alt="Add Repository to Home Assistant"></a>
+  <a href="https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https://github.com/fastiuk/homeassistant-app-bambuddy"><img src="https://my.home-assistant.io/badges/supervisor_add_addon_repository.svg" alt="Add Repository to Home Assistant"></a>
 </p>
 <p align="center">
-  <img src="https://img.shields.io/badge/dynamic/yaml?url=https://raw.githubusercontent.com/Spegeli/homeassistant-app-bambuddy/main/bambuddy/config.yaml&query=$.version&label=stable&color=blue">
-  <img src="https://img.shields.io/badge/dynamic/yaml?url=https://raw.githubusercontent.com/Spegeli/homeassistant-app-bambuddy/main/bambuddy-daily/config.yaml&query=$.version&label=daily&color=purple">
+  <img src="https://img.shields.io/badge/dynamic/yaml?url=https://raw.githubusercontent.com/fastiuk/homeassistant-app-bambuddy/main/bambuddy/config.yaml&query=$.version&label=stable&color=blue">
+  <img src="https://img.shields.io/badge/dynamic/yaml?url=https://raw.githubusercontent.com/fastiuk/homeassistant-app-bambuddy/main/bambuddy-daily/config.yaml&query=$.version&label=daily&color=purple">
+  <a href="https://github.com/fastiuk/homeassistant-app-bambuddy/actions/workflows/validate.yml"><img src="https://github.com/fastiuk/homeassistant-app-bambuddy/actions/workflows/validate.yml/badge.svg" alt="Validate"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT%20%2B%20AGPL--3.0-yellow" alt="License: MIT + AGPL-3.0"></a>
 </p>
+
+> [!NOTE]
+> This is a fork of [Spegeli/homeassistant-app-bambuddy](https://github.com/Spegeli/homeassistant-app-bambuddy) that adds **Home Assistant Ingress**: BamBuddy in the sidebar, also through Home Assistant Cloud and in the Companion app. The change is offered upstream; once it is merged there, use the original repository.
+
 <p align="center">
   💬 Questions and discussion: <a href="https://community.home-assistant.io/t/1026198">Home Assistant forum</a> · <a href="https://www.reddit.com/r/BambuLab/comments/1xinhv3/bambuddy_as_a_home_assistant_app_your_selfhosted/">r/BambuLab on Reddit</a>
 </p>
@@ -57,7 +62,7 @@ The app runs BamBuddy; the [BamBuddy integration](https://github.com/Spegeli/hac
 
 ### Via button (Recommended)
 
-[![Add Repository to Home Assistant](https://my.home-assistant.io/badges/supervisor_add_addon_repository.svg)](https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https://github.com/Spegeli/homeassistant-app-bambuddy)
+[![Add Repository to Home Assistant](https://my.home-assistant.io/badges/supervisor_add_addon_repository.svg)](https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https://github.com/fastiuk/homeassistant-app-bambuddy)
 
 **One-Click Install:** Click the button above to add the repository directly to Home Assistant!
 
@@ -67,7 +72,7 @@ The app runs BamBuddy; the [BamBuddy integration](https://github.com/Spegeli/hac
 2. Click the three dots `⋮` in the top right corner and choose **Repositories**.
 3. Paste the repository URL and click **Add**:
    ```text
-   https://github.com/Spegeli/homeassistant-app-bambuddy
+   https://github.com/fastiuk/homeassistant-app-bambuddy
    ```
 
 ---

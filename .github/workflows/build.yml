@@ -75,8 +75,7 @@ jobs:
       from_version: ${{ steps.next.outputs.from_version }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v7
-
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
       # This run validates and builds the commit it was started on. If it had
       # to wait and main moved, its version would be out of date: committing it
       # could replace a newer BamBuddy version or reuse a released number.
@@ -147,7 +146,7 @@ jobs:
     uses: ./.github/workflows/_build.yml
     with:
       context: bambuddy
-      image: ghcr.io/spegeli/homeassistant-app-bambuddy
+      image: ghcr.io/fastiuk/homeassistant-app-bambuddy
       version: ${{ needs.prepare-stable.outputs.version }}
     permissions:
       contents: read
@@ -165,7 +164,7 @@ jobs:
       # The current main, pushed with the deploy key as in auto-update.yml:
       # main only accepts pull requests, and its ruleset lets this key through.
       - name: Checkout
-        uses: actions/checkout@v7
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
         with:
           ref: ${{ github.ref }}
           fetch-depth: 0
@@ -226,7 +225,7 @@ jobs:
     uses: ./.github/workflows/_build.yml
     with:
       context: bambuddy-daily
-      image: ghcr.io/spegeli/homeassistant-app-bambuddy-daily
+      image: ghcr.io/fastiuk/homeassistant-app-bambuddy-daily
     permissions:
       contents: read
       packages: write

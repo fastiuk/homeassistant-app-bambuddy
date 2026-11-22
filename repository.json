@@ -1,5 +1,5 @@
 {
-  "name": "BamBuddy Repository (by Spegeli)",
-  "url": "https://github.com/Spegeli/homeassistant-app-bambuddy",
-  "maintainer": "Spegeli <spegeli@users.noreply.github.com>"
+  "name": "BamBuddy Repository (Ingress fork)",
+  "url": "https://github.com/fastiuk/homeassistant-app-bambuddy",
+  "maintainer": "fastiuk"
 }
