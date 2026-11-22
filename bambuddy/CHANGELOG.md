@@ -1,3 +1,9 @@
+## 1.3.2s1
+
+**App update, BamBuddy stays at 1.3.2.**
+
+- Home Assistant Ingress: BamBuddy in the sidebar, also through Home Assistant Cloud and in the Companion app
+
 ## 1.3.2
 
 **Bambuddy 1.3.2**
