@@ -22,8 +22,11 @@ ARG BAMBUDDY_VERSION
 RUN apt-get update \
     && apt-get install -y --no-install-recommends git ca-certificates \
     && rm -rf /var/lib/apt/lists/*
+# Upstream keeps only the newest daily tag, so an older Daily version cannot be
+# rebuilt any more (just like its base image, once upstream cleans it up).
 RUN git clone --quiet --depth 1 --branch "v${BAMBUDDY_VERSION%s*}" \
-        https://github.com/maziggy/bambuddy.git /src
+        https://github.com/maziggy/bambuddy.git /src \
+    || { echo "BamBuddy source tag v${BAMBUDDY_VERSION%s*} not found upstream" >&2; exit 1; }
 COPY ingress /ingress
 RUN node /ingress/patch-frontend.mjs /src
 WORKDIR /src/frontend
